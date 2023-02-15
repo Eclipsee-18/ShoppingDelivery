@@ -14,12 +14,9 @@ using System.ComponentModel;
 namespace consumer;
 public class Program
 {
-	private ConsumerConfig config;
 
-	public Program(ConsumerConfig config)
-	{
-		this.config = config;
-	}
+
+
 
 	static void Main(string[] args)
 	{
@@ -149,7 +146,7 @@ public class Program
 
 			if (response.IsSuccessStatusCode)
 			{
-				return "\nData sent successfully. [" + DateTime.Now + "]\n";
+				return "\nData sent successfully.";
 				//Console.WriteLine();
 			}
 			else
