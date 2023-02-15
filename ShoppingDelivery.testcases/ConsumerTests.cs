@@ -53,7 +53,7 @@ namespace ShoppingDelivery.testcases
 
 
 		[Fact]
-		public void TestPostData()
+		public void TestPostData_returnsString()
 		{
 			// Arrange
 			string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJkOTU3NTI1My00MDA2LTRiNzItOTM0OS1mYmE0MDliMTdiMGYiLCJpYXQiOiIyLzE1LzIwMjMgMTE6MjU6MDggQU0iLCJVc2VySWQiOiIxIiwiRGlzcGxheU5hbWUiOiJBZG1pbiIsIlVzZXJOYW1lIjoiYWRtaW4iLCJFbWFpbCI6ImFkbWluQGFiYy5jb20iLCJleHAiOjE2NzY0NjA5MDgsImlzcyI6IkpXVEF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZVBvc3RtYW5DbGllbnQifQ.VUZJ9jZTF19-umqMoz-g2texA6WYPVqV3UdOVCgIjeo";
