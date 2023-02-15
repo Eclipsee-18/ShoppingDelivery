@@ -20,10 +20,7 @@ public class Program
 			while(true) 
 			{
 				var customerId = Console.ReadLine();
-				if (customerId.Equals("q", StringComparison.OrdinalIgnoreCase))
-				{
-					break;
-				}
+				
 				var message = new Message<string, string>
 				{
 					Key = customerId,
@@ -33,8 +30,11 @@ public class Program
 				Console.WriteLine($"Produced customer Id: {result.Value} to partition {result.Partition}");
 				//Console.WriteLine("CustomerId sent to Kafka!"+DateTime.Now);
 				Console.Write("ENTER Q TO QUIT!\n");
-				
-				
+				if (customerId.Equals("q", StringComparison.OrdinalIgnoreCase))
+				{
+					break;
+				}
+
 			}
 			//var customerId = Console.ReadLine();
 			//var message = new Message<string, string>

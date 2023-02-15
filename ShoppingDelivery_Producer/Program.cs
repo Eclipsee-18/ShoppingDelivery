@@ -14,10 +14,6 @@ using System.ComponentModel;
 namespace consumer;
 public class Program
 {
-
-
-
-
 	static void Main(string[] args)
 	{
 		var config = new ConsumerConfig
@@ -38,6 +34,10 @@ public class Program
 			{
 				var message = consumer.Consume();
 				Console.WriteLine($"Customer Id: {message.Value}");
+				if(message.Value.Equals("q", StringComparison.OrdinalIgnoreCase)) 
+				{
+					Environment.Exit(0);
+				}
 				Console.WriteLine("\nCustomer-ID recieved from producer! ["+DateTime.Now+"]");
 			
 
